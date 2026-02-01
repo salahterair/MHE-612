@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MHE-612 Course Guide</title>
+
+  <style>
+    :root{
+      --bg:#f8fafc; --card:#ffffff; --text:#0f172a; --muted:#475569;
+      --line:#e2e8f0; --accent:#1d4ed8; --accent2:#2563eb; --soft:#eef2ff;
+      --shadow: 0 10px 22px rgba(2,6,23,.06);
+    }
+    *{box-sizing:border-box}
+    html, body {max-width:100%; overflow-x:hidden; scroll-behavior:smooth;}
+    body{
+      margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      background:var(--bg); color:var(--text); line-height:1.6;
+      -webkit-text-size-adjust:100%;
+    }
+    .wrap{max-width:1000px; margin:0 auto; padding:18px 12px 60px;}
+    .hero{
+      background:linear-gradient(135deg,var(--accent),var(--accent2));
+      color:#fff; border-radius:16px; padding:18px; box-shadow:var(--shadow);
+    }
+    .hero h1{margin:0; font-weight:800; font-size:clamp(18px,2.8vw,22px); line-height:1.25;}
+    .hero p{margin:10px 0 0; font-size:clamp(13px,2.2vw,14px); opacity:.95;}
+    .nav{
+      margin-top:12px; background:rgba(255,255,255,.14);
+      border:1px solid rgba(255,255,255,.22); border-radius:14px;
+      padding:10px; display:flex; flex-wrap:wrap; gap:8px; align-items:center;
+    }
+    .nav a{
+      text-decoration:none; color:#fff; font-weight:700; font-size:13px;
+      border:1px solid rgba(255,255,255,.26); background:rgba(255,255,255,.10);
+      padding:8px 10px; border-radius:999px;
+    }
+    .nav a:hover{background:rgba(255,255,255,.18)}
+    .nav .hint{flex:1 1 240px; font-size:12px; opacity:.92; margin-left:4px;}
+    .card{
+      margin-top:14px; background:var(--card); border:1px solid var(--line);
+      border-radius:16px; padding:14px; box-shadow:var(--shadow);
+    }
+    h2{margin:0; font-weight:800; font-size:clamp(16px,2.4vw,18px); line-height:1.25;}
+    p.sub{margin:8px 0 0; color:var(--muted); font-size:clamp(13px,2.2vw,14px);}
+    ul,ol{margin:8px 0 0 18px; padding:0;}
+    li{margin:7px 0; font-size:clamp(13px,2.2vw,14px);}
+    details{
+      margin-top:12px; border:1px solid var(--line); border-radius:14px;
+      background:#fff; overflow:hidden;
+    }
+    summary{
+      cursor:pointer; user-select:none;
+      font-weight:800; font-size:clamp(13px,2.2vw,14px);
+      list-style:none; padding:12px; background:var(--soft);
+      display:flex; align-items:center; justify-content:space-between; gap:10px;
+      border-bottom:1px solid var(--line);
+    }
+    summary::-webkit-details-marker{display:none;}
+    .reveal{display:inline-flex; align-items:center; gap:8px; font-weight:800; color:var(--accent);}
+    .chev{
+      width:26px; height:26px; border-radius:999px; border:1px solid var(--line);
+      background:#fff; color:var(--muted); font-size:14px; line-height:24px; text-align:center;
+      transform:rotate(0deg); transition:transform .15s ease;
+      flex:0 0 auto;
+    }
+    details[open] .chev{transform:rotate(180deg);}
+    .content{padding:12px;}
+    .table-wrap{
+      width:100%; overflow-x:auto; -webkit-overflow-scrolling:touch;
+      margin-top:10px; border-radius:12px;
+    }
+    table{width:100%; min-width:520px; border-collapse:collapse;}
+    th,td{border:1px solid var(--line); padding:10px; font-size:clamp(13px,2.2vw,14px); vertical-align:top;}
+    th{background:var(--soft); text-align:left; font-weight:800;}
+    .topbtn{
+      position:fixed; right:14px; bottom:14px; z-index:9999;
+      display:none; text-decoration:none; background:var(--accent); color:#fff;
+      padding:10px 12px; border-radius:999px; font-size:13px; font-weight:800;
+      box-shadow:0 12px 24px rgba(2,6,23,.20); border:1px solid rgba(255,255,255,.20);
+    }
+    .topbtn.show{display:inline-block;}
+    .footer{margin-top:18px; font-size:12px; color:var(--muted); text-align:center; padding:0 8px;}
+  </style>
+</head>
+
+<body>
+<a id="top"></a>
+
+<div class="wrap">
+
+  <div class="hero">
+    <h1>MHE-612: Planning, Management, and Governance in Health Professions Education</h1>
+    <p>
+      Program: MHPE | Credit Hours: 2 (1+1) | Duration: 3 Weeks<br>
+      Start: 14 February 2026 | Delivery: Moodle (Asynchronous) + 2 Live Zoom Sessions
+    </p>
+
+    <div class="nav" aria-label="Internal navigation">
+      <a href="#overview">Overview</a>
+      <a href="#readings">Readings</a>
+      <a href="#week1">Week 1</a>
+      <a href="#week2">Week 2</a>
+      <a href="#week3">Week 3</a>
+      <a href="#closure">Assessment</a>
+    
+    </div>
+  </div>
+
+  <!-- OVERVIEW -->
+  <div class="card" id="overview">
+    <h2>Course Overview</h2>
+    <p class="sub">
+  This course develops learners’ understanding of planning, management, and governance within medical and health-professions education.
+</p>
+
+<p class="sub">
+  It introduces management theories, organizational structures, leadership models, and governance frameworks applicable to educational institutions. Participants will explore how planning and governance decisions affect quality, accountability, and performance, and will reflect on their own leadership style and management practice.
+</p>
+
+    <details open>
+      <summary><span class="reveal">Show / Hide — Course Learning Outcomes</span><span class="chev">⌄</span></summary>
+      <div class="content">
+        <ul>
+          <li>Explain the fundamental theories and concepts of planning, management, and governance.</li>
+          <li>Analyze leadership approaches and organizational structures in HPE.</li>
+          <li>Apply planning/management principles to institutional challenges.</li>
+          <li>Evaluate governance models and accountability mechanisms.</li>
+          <li>Reflect on personal management and leadership style within educational contexts.</li>
+        </ul>
+      </div>
+    </details>
+  </div>
+
+  <!-- READINGS -->
+  <div class="card" id="readings">
+
+    <details open>
+      <summary><span class="reveal">Show / Hide — Core Reading Materials</span><span class="chev">⌄</span></summary>
+      <div class="content">
+        <ol>
+          <li>Bolman, L. G., &amp; Deal, T. E. (2017). <em>Reframing Organizations</em> (6th ed.). Jossey-Bass.</li>
+          <li>Mintzberg, H. (2009). <em>Managing</em>. Berrett-Koehler.</li>
+          <li>World Health Organization. (2013). <em>Transforming and Scaling Up Health Professionals’ Education and Training</em>. WHO.</li>
+          <li>Harden, R. M., &amp; Laidlaw, J. M. (2020). <em>Essential Skills for a Medical Teacher</em> (3rd ed.). Elsevier.</li>
+          <li>Swanwick, T., &amp; Forrest, K. (2019). <em>Understanding Medical Education</em> (3rd ed.). Wiley-Blackwell.</li>
+        </ol>
+      </div>
+    </details>
+  </div>
+
+  <!-- WEEK 1 -->
+  <div class="card" id="week1">
+    <h2>Week 1: Fundamentals of Educational Management</h2>
+    <p class="sub"><strong>Dates:</strong> 14 February 2026 – 20 February 2026</p>
+
+    <details open>
+      <summary><span class="reveal">Show / Hide — Key Topics</span><span class="chev">⌄</span></summary>
+      <div class="content">
+        <ul>
+          <li>Principles and Functions of Management </li>
+          <li>Definition, scope, and importance of management in HPE</li>
+          <li>Management process and core functions: planning, organizing, leading, and controlling.</li>
+          <li>Distinction between management and leadership. </li>
+        </ul>
+      </div>
+    </details>
+
+    <details open>
+      <summary><span class="reveal">Show / Hide — Reading Prompts (Week 1)</span><span class="chev">⌄</span></summary>
+      <div class="content">
+        <ul>
+          <li><strong>Bolman &amp; Deal (2017)</strong>: Which “frame” best explains one management challenge in your institution?</li>
+          <li><strong>Mintzberg (2009)</strong>: Identify two observed managerial roles in HPE; how do they differ from leadership behaviors?</li>
+          <li><strong>Harden &amp; Laidlaw (2020)</strong>: How do management decisions influence teaching quality/program delivery in your context?</li>
+        </ul>
+      </div>
+    </details>
+
+    <details open>
+      <summary><span class="reveal">Show / Hide — Discussion Forum Questions</span><span class="chev">⌄</span></summary>
+      <div class="content">
+        <ul>
+          <li>Why is effective management crucial in academic HPE institutions?</li>
+          <li>In what ways does management differ from leadership in educational contexts?</li>
+        </ul>
+      </div>
+    </details>
+  </div>
+
+  <!-- WEEK 2 -->
+  <div class="card" id="week2">
+    <h2>Week 2: Strategic and Quality Management in HPE</h2>
+    <p class="sub"><strong>Dates:</strong> 21 February 2026 – 27 February 2026</p>
+
+    <details open>
+      <summary><span class="reveal">Show / Hide — Key Topics</span><span class="chev">⌄</span></summary>
+      <div class="content">
+        <ul>
+          <li>Strategic and Operational Planning in HPE</li>
+          <li>Vision, mission, goals, and objectives</li>
+          <li>Strategic planning cycle and situational analysis (SWOT).</li>
+
+        </ul>
+      </div>
+    </details>
+
+    <details open>
+      <summary><span class="reveal">Show / Hide — Reading Prompts (Week 2)</span><span class="chev">⌄</span></summary>
+      <div class="content">
+        <ul>
+          <li><strong>WHO (2013)</strong>: Translate one WHO recommendation into a feasible institutional strategy in your setting.</li>
+          <li><strong>Swanwick &amp; Forrest (2019)</strong>: Identify one QA/program improvement concept and link it to accountability.</li>
+          <li><strong>Bolman &amp; Deal (2017)</strong>: What structure (roles/KPIs/reporting) is needed for a QA initiative to work?</li>
+        </ul>
+      </div>
+    </details>
+
+    <details open>
+      <summary><span class="reveal">Show / Hide — Discussion Forum Questions</span><span class="chev">⌄</span></summary>
+      <div class="content">
+        <ul>
+          <li>What are essential steps in developing a strategic plan for an HPE institution?</li>
+          <li>How does quality assurance relate to effective management and governance?</li>
+        </ul>
+      </div>
+    </details>
+
+    <details>
+      <summary><span class="reveal">Show / Hide — Live Zoom Session 1</span><span class="chev">⌄</span></summary>
+      <div class="content">
+        <p class="sub">Zoom Session 1 occurs this week (date/time/link will be  posted latter on Moodle).</p>
+      </div>
+    </details>
+  </div>
+
+  <!-- WEEK 3 -->
+  <div class="card" id="week3">
+    <h2>Week 3: Management and Governance.</h2>
+    <p class="sub"><strong>Dates:</strong> 28 February 2026 – 06 March 2026</p>
+
+    <details open>
+      <summary><span class="reveal">Show / Hide — Key Topics</span><span class="chev">⌄</span></summary>
+      <div class="content">
+        <ul>
+          <li>Institutional management structures and accountability mechanisms.</li>
+          <li>Designing an institutional improvement framework</li>
+          <li>Developing and implementing an improvement plan for a selected organization.</li>
+
+        </ul>
+      </div>
+    </details>
+
+    <details open>
+      <summary><span class="reveal">Show / Hide — Reading Prompts (Week 3)</span><span class="chev">⌄</span></summary>
+      <div class="content">
+        <ul>
+          <li><strong>Bolman &amp; Deal (2017)</strong>: Use two frames to justify your improvement recommendations.</li>
+          <li><strong>Mintzberg (2009)</strong>: Identify one practice likely to fail without stronger governance; what control mechanism is needed?</li>
+          <li><strong>WHO (2013)</strong>: Use one WHO principle (quality/scale-up/sustainability) to anchor your plan.</li>
+        </ul>
+      </div>
+    </details>
+
+    <details>
+      <summary><span class="reveal">Show / Hide — Discussion Forum Questions</span><span class="chev">⌄</span></summary>
+      <div class="content">
+        <ul>
+          <li>Leadership Style Characterization: Define a leadership style common in health professions education (such as Transformational, Transactional, or Distributed leadership). What are the core characteristics of this style, and why is it frequently observed in academic settings?</li>
+          
+        </ul>
+      </div>
+    </details>
+
+    <details>
+      <summary><span class="reveal">Show / Hide — Live Zoom Session 2</span><span class="chev">⌄</span></summary>
+      <div class="content">
+        <p class="sub">Zoom Session 2 occurs this week (date/time/link will be  posted latter on Moodle).</p>
+      </div>
+    </details>
+  </div>
+  
+
+  <!-- ASSESSMENT & CLOSURE -->
+  <div class="card" id="closure">
+    <h2>Assessment and Course Closure</h2>
+
+    <details open>
+      <summary><span class="reveal">Show / Hide — Assessment Overview</span><span class="chev">⌄</span></summary>
+      <div class="content">
+        <ul>
+          <li>Written Exam – 35%</li>
+          <li>Group Assignment – 30%</li>
+          <li>Class Participation (Moodle + Zoom) – 15%</li>
+          <li>Online Discussion Forums – 10%</li>
+          <li>Individual Reflection Report – 10%</li>
+        </ul>
+      </div>
+    </details>
+
+    <details open>
+      <summary><span class="reveal">Show / Hide — Group Assignment</span><span class="chev">⌄</span></summary>
+      <div class="content">
+        <p><strong>Title:</strong> Developing a Governance and Management Improvement Framework for a Health Professions Education Institution</p>
+        <p class="sub" style="margin-top:0;">
+          Select an institution and propose an evidence-based improvement plan integrating theory with practical analysis.
+          <strong>Maximum 1,000 words</strong>. Submit via LMS within <strong>Week 3</strong>.
+        </p>
+        <ol>
+          <li>Describe current organizational/management structure.</li>
+          <li>Identify governance/management challenges.</li>
+          <li>Apply management and leadership theories to propose improvements.</li>
+          <li>Recommend governance frameworks and accountability mechanisms.</li>
+          <li>Reflect briefly on group collaboration and leadership process.</li>
+        </ol>
+      </div>
+    </details>
+
+    <details>
+      <summary><span class="reveal">Show / Hide — Group Assignment Rubric (30 Marks)</span><span class="chev">⌄</span></summary>
+      <div class="content">
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Criteria</th><th>Description</th><th>Marks</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Understanding of Concepts</td><td>Sound understanding of management and governance theories.</td><td>4</td></tr>
+              <tr><td>Application to Practice</td><td>Applies theory to realistic institutional settings.</td><td>6</td></tr>
+              <tr><td>Strategic Recommendations</td><td>Practical and feasible improvement strategies.</td><td>6</td></tr>
+              <tr><td>Reflection and Leadership</td><td>Insight into teamwork, leadership, and collaboration.</td><td>6</td></tr>
+              <tr><td>Organization and Presentation</td><td>Clear, coherent, professional structure.</td><td>8</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </details>
+
+    <details>
+      <summary><span class="reveal">Show / Hide — Academic Integrity and Turnitin Policy</span><span class="chev">⌄</span></summary>
+      <div class="content">
+        <p class="sub" style="margin-top:0;">
+          All written submissions must be original, properly referenced, and compliant with institutional policy.
+          Submissions may be checked via Turnitin (or equivalent) through the LMS. Misconduct (plagiarism, inappropriate collaboration,
+          contract cheating, or unacknowledged AI use where applicable) will be managed under institutional regulations.
+        </p>
+      </div>
+    </details>
+
+    <details open>
+      <summary><span class="reveal">Show / Hide — Course Closure</span><span class="chev">⌄</span></summary>
+      <div class="content">
+        <ul>
+          <li>Written exam instructions and final announcements will be posted on Moodle.</li>
+          <li>Confirm all submissions are completed before deadlines.</li>
+          <li>Review learning outcomes and apply concepts to your professional context.</li>
+        </ul>
+      </div>
+    </details>
+  </div>
+
+  <div class="footer">MHE-612 | MHPE</div>
+</div>
+
+<a class="topbtn" id="backToTop" href="#top" aria-label="Back to top">Back to top</a>
+
+<script>
+  (function(){
+    var btn = document.getElementById('backToTop');
+    function toggle(){ (window.scrollY > 500) ? btn.classList.add('show') : btn.classList.remove('show'); }
+    window.addEventListener('scroll', toggle, {passive:true});
+    toggle();
+  })();
+</script>
+
+</body>
+</html>
